@@ -1,0 +1,129 @@
+.input-container{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/Input.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title{
+    width: 62.3%;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 800;
+    border-radius: 50px;
+    font-family: poppins;
+    background: #ffe500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.highlight{
+  padding: 5px 15px;
+  border: 1px solid black;
+  background: black;
+  border-radius: 30px;
+  color: antiquewhite;
+}
+
+.title:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.forms {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-section {
+    max-width: 20rem;
+    background: black;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: poppins;
+    border: 2px solid wheat;
+  }
+  
+  h3 {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 30px;
+    background: #ffe500;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 25px;
+    border: 2px solid wheat;
+    background: none;
+    color: antiquewhite;
+    appearance: none;
+  }
+
+  select {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    border-radius: 20px;
+  }
+
+  select option{
+    color: black;
+  }
+
+  
+  .submit-btn{
+    padding: 8px 15px;
+    width: 63rem;
+    border-radius: 35px;
+    background: rgba(0, 0, 0, 0.8); 
+    border: 1.5px solid wheat;;
+    font-size: 1.3rem;
+    color: antiquewhite;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #ffe500;
+    color: white;
+    transform: scale(1.02); 
+    border: 1.5px solid #ffe500;
+    color: black;
+}
+
+.submit-btn:active {
+    transform: scale(0.95); 
+}

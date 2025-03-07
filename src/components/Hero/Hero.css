@@ -1,0 +1,63 @@
+.container{
+    margin: 0;
+    padding-top: 29rem;
+    padding-left: 6rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/Hero.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.button{
+    gap: 20px;
+    display: flex;
+}
+
+button{
+    padding: 8px 15px;
+    width: 15rem;
+    border-radius: 35px;
+    background: none;
+    border: 1.5px solid #ffe500;
+    font-size: 1rem;
+    color: #ffe500;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 230, 0, 0.66);
+    color: white;
+    transform: scale(1.05); 
+    border: 1.5px solid #ffe500;
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+.scroll-down:hover {
+    color: #ffe500;
+}
